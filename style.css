@@ -1,0 +1,250 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+body { 
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
+}
+a, button, .logo {
+    cursor: pointer;
+}
+span {
+    display: block;
+}
+section, footer {
+    padding: 0 320px;
+}
+.header {
+    height: 900px;
+    width: 100vw;
+    background-color: #F2E9D8;
+}
+.nav {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    padding: 15px 320px 0;
+    background-color: #F2E9D8;
+    box-sizing: border-box;
+    font-size: 24px;
+    z-index: 10;
+}
+.logo {
+    margin-top: 7px;
+    width: 105px;
+    height: 36px;
+}
+.menu {
+    display: flex;
+}
+.menu-home, .menu-about, .menu-support {
+    margin: 13px 15px 0 0;
+}
+
+.menu-home a:hover, .menu-about a:hover, .menu-support a:hover {
+    color: #D97652;
+}
+.btn-copy {
+    border: none;
+    color: white;
+    background-color: #D97652;
+    width: 140px;
+    height: 50px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 320px;
+}
+
+.tit {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.sub-tit {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 40px;
+}
+
+.img-sleeping {
+    width: 650px;
+    margin-top: 150px;
+    transform: rotate(-50deg)
+}
+
+main {
+    position: relative;
+}
+.sec-liedown {
+    display: flex;
+    justify-content: space-between;
+}
+.img-liedown {
+    width: 550px;
+    transform: rotate(110deg);
+    z-index: -10;
+}
+.liedowntxt-wrap {
+    margin-top: 300px;
+}
+.liedown-tit {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.liedown-subtxt {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+
+.btn-up {
+    border: 2px solid #D97652;
+    width: 50px;
+    height: 50px;
+    border-radius: 35px;
+    background: #FFFFFF;
+    opacity: 0.8;
+    color: #D97652;
+    position: fixed;
+    right: 200px;
+    bottom: 70px;
+    z-index: 10;
+}
+.btn-up:hover {
+    background-color: #D97652;
+    color: white;
+}
+
+.sec-jelly {
+    margin: 50px 0 200px;
+}
+.jelly-tit {
+    font-size: 48px;
+    color: #D97652;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.jelly-subtxt {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin-bottom: 88px;
+}
+.colorchange {
+    color: #D97652;
+}
+
+.jellyimg-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.jellyimg-wrap img {
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.sec-subscribe {
+    width: 1280px;
+    height: 200px;
+    position: absolute;
+    background: #263140;
+    z-index: 10;
+    bottom: 245px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.subscribe-txtwrap {
+    
+    margin: 50px 143px 50px 58px;
+}
+.subscribe-tit {
+    font-size: 36px;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+.subscribe-subtxt {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.inp-subscribe {
+    width: 530px;
+    height: 60px;
+    border: none;
+    background-color: white;
+    margin: 70px 58px 70px 0;
+    border-radius: 60px;
+    font-size: 16px;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+.btn-subscribe {
+    position: absolute;
+    right: 63px;
+    top: 75px;
+    border: none;
+    width: 136px;
+    height: 50px;
+    background-color: #D97652;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 40px;
+}
+
+
+main::after {
+    display: block;
+    content: "";
+    width: 100vW;
+    height: 345px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(./images/eyes.png);
+    background-position: 0 35%;
+    opacity: 0.6;
+    z-index: -10;
+}
+.footer {
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot-logo {
+    width: 200px;
+    height: 70px;
+}
+.instagram {
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 390px) {
+    .header {
+        height: 802px;
+    }
+    .logo {
+        width: 100px;
+        height: 30px;
+    }
+    .menu {
+        display: none;
+    }
+}
