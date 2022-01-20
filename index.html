@@ -9,26 +9,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header" id="top">
+  <h1 class="hidden">hapum's blog</h1>
+    <header class="header">
         <nav class="nav">
             <a href="index.html"><img src="./images/logo.png" alt="hapum" class="logo"></a>
             <ul class="menu">
-                <li class="menu-home"><a href="#top">Home</a></li>
-                <li class="menu-about"><a href="#main">About</a></li>
-                <li class="menu-support"><a href="#subscribe">Subscribe</a></li>
+                <li class="menu-home">Home</li>
+                <li class="menu-about">About</li>
+                <li class="menu-subscribe">Subscribe</li>
                 <li><button class="btn-copy">COPY URL</button></li>
+            </ul>
+            <a class="open-menu"><img src="./images/menu.png" alt="메뉴 보기" class="open-menuimg"></a>
+            <ul class="drop-menu">
+              <li class="menu-close"><img src="./images/arrow-right.png" alt="메뉴 닫기"></li>
+              <li class="menu-home">Home</li>
+              <li class="menu-about">About</li>
+              <li class="menu-subscribe">Subscribe</li>
+              <li><button class="btn-copy">COPY URL</button></li>
             </ul>
         </nav>
         <div class="header-wrap">
             <div class="header-txtwrap">
-                <h1 class="tit">
-                    Hapum is the cutest cat in the world!
-                </h1>
+                <h2 class="tit">
+                    <strong class="strong-hapum">Hapum</strong> is <span class="spansmall">the cutest cat</span> in the world!
+                </h2>
                 <p class="sub-tit">
-                    <span>See Hapum's photo and enjoy it!</span>
-                    <span>If you want more information, please come our instagram:)</span>
-                    <span>He is a 5 years old!</span>
-                    <span>Share our blog and enjoy together!</span>
+                    <span class="span-normal">See Hapum's photo and enjoy it!</span>
+                    <span class="span-normal">If you want more information, <span class="spansmall">please come our instagram:)</span></span>
+                    <span class="span-normal">He is a 5 years old!</span>
+                    <span class="span-normal">Share our blog and enjoy together!</span>
                 </p>
                 <button class="btn-copy">COPY URL</button>
             </div>
@@ -36,27 +45,27 @@
         </div>
     </header>
 
-    <main id="main">
+    <main>
         <section class="sec-liedown">
             <img src="./images/o0o.png" alt="hapum is lying down" class="img-liedown">
             <div class="liedowntxt-wrap">
                 <h2 class="liedown-tit">
-                    <span>Do you know that</span>
-                    <span>hapum loves lying down??</span>
+                    <span class="span-normal">Do you know that</span>
+                    <span class="span-normal"><strong class="strong-hapum">Hapum</strong> loves lying down??</span>
                 </h2>
                 <p class="liedown-subtxt">
-                    <span>Look at the white fur on his belly.</span>
-                    <span>It's very soft and warm.</span>
+                    <span class="span-normal">Look at the white fur on his belly.</span>
+                    <span class="span-normal">It's very soft and warm.</span>
                 </p>
             </div> 
         </section>
         <section class="sec-jelly">
             <h2 class="jelly-tit">
-                Come and See hapum's Jelly and Foot!!
+                Come and See hapum's <strong class="strong-jelly">Jelly</strong> and <strong class="strong-jelly">Foot</strong>!!
             </h2>
             <p class="jelly-subtxt">
-                <span>Hapum has not only black jelly but also amazingly cute <strong class="colorchange">pink jelly</strong>.</span>
-                <span>He is wearing white socks and it looks so cute.</span>
+                <span class="span-normal">Hapum has not only <strong class="strong-black">black jelly</strong> but also amazingly cute <strong class="strong-jelly">pink jelly</strong>.</span>
+                <span class="span-normal">He is wearing white socks and it looks so cute.</span>
             </p>
             <div class="jellyimg-wrap">
                 <img src="./images/jelly.jpg" alt="hapum's pink jelly">
@@ -65,12 +74,12 @@
                 <img src="./images/punch2.jpg" alt="hapum's white foot2">
             </div>
         </section>
-        <article class="sec-subscribe" id="subscribe">
+        <article class="sec-subscribe">
             <div class="subscribe-txtwrap">
                 <h2 class="subscribe-tit">Subscribe to our Blog post</h2>
                 <p class="subscribe-subtxt">
-                    <span>If you subscribe to our blog, </span>
-                    <span>You can receive the latest news of hapum by e-mail.</span></p>
+                    <span class="span-normal">If you subscribe to our blog, </span>
+                    <span class="span-normal">You can receive the latest news of hapum by e-mail.</span></p>
             </div>
             <div class="inpwrap-subscribe">
                 <input type="text" placeholder="✉️ Enter your mail address" class="inp-subscribe">
@@ -82,7 +91,7 @@
         <div class="subscribe-modal">
             <img src="./images/face.png" alt="hapum's face" class="modal-img">
             <p class="modal-txt">Thank you!</p>
-            <p class="modal-subtxt">now you can receive the latest hapum's news</p>
+            <p class="modal-subtxt"><span class="spansmall">now you can receive</span> the latest hapum's news</p>
     
             <button class="modal-btn">
                 OK! I Love Hapum
@@ -90,7 +99,7 @@
     
         </div>
 
-        <a href="#top"><button class="btn-up">UP</button></a>
+        <button class="btn-up">UP</button>
     </main>
 
 

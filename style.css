@@ -10,12 +10,28 @@
 body { 
     font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
 }
-s
 a, button, .logo {
     cursor: pointer;
 }
-span {
+.span-normal {
     display: block;
+}
+p strong {
+  font-weight: 400;
+}
+.strong-hapum:hover {
+  color: #D97652;
+}
+.strong-jelly:hover {
+  color: pink;
+}
+p .strong-jelly:hover {
+  color: white;
+  background-color: pink;
+}
+.strong-black:hover {
+  color: white;
+  background-color: black;
 }
 section, footer {
     padding: 0 300px;
@@ -35,7 +51,7 @@ section, footer {
     background-color: #F2E9D8;
     box-sizing: border-box;
     font-size: 16px;
-    z-index: 10;
+    z-index: 20;
 }
 .logo {
     margin-top: 4px;
@@ -45,11 +61,12 @@ section, footer {
 .menu {
     display: flex;
 }
-.menu-home, .menu-about, .menu-support {
+.menu-home, .menu-about, .menu-subscribe {
     margin: 13px 15px 0 0;
+    cursor: pointer;
 }
 
-.menu-home a:hover, .menu-about a:hover, .menu-support a:hover {
+.menu-home:hover, .menu-about:hover, .menu-subscribe:hover {
     color: #D97652;
 }
 .btn-copy {
@@ -74,8 +91,36 @@ section, footer {
     justify-content: space-between;
     align-items: center;
     padding: 0 300px;
+    overflow: hidden;
 }
-
+.open-menu {
+  display: none;
+}
+.drop-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #263140;
+  width: 70vw;
+  height: 100vh;
+  font-weight: 700;
+  color: white;
+  font-size: 16px;
+  display: none;
+}
+.menu-close > img {
+  margin: 22px 20px 50px 20px;
+  width: 50px;
+  height: 50px;
+  padding: 9px;
+  box-sizing: border-box;
+}
+.drop-menu li+li {
+  margin: 0 0 30px 50px ;
+}
+.drop-menu .btn-copy {
+  top: 290px;
+}
 .tit {
     font-size: 43px;
     font-weight: 700;
@@ -157,9 +202,6 @@ main {
     line-height: 24px;
     text-align: center;
     margin-bottom: 90px;
-}
-.colorchange {
-    color: #D97652;
 }
 
 .jellyimg-wrap {
@@ -318,15 +360,203 @@ main::after {
 
 
 
-@media screen and (max-width: 390px) {
-    .header {
-        height: 802px;
+@media screen and (max-width: 400px) {
+
+  .header {
+    height: 802px;
+  }
+  section, footer {
+    padding: 0 30px;
+}
+  .logo {
+      width: 80px;
+      height: 25px;
+  }
+  .spansmall {
+    display: block;
+  }
+  .menu {
+      display: none;
+  }
+  .nav {
+      padding: 10px 30px 0;
+  }
+  .btn-copy {
+    position: absolute;
+    top: 480px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .header-wrap {
+      display: block;
+      padding: 0 30px;
+  }
+  .open-menu {
+    display: block;
+    width: 50px;
+    height: 50px;
+  }
+  .open-menuimg {
+    width: 32px;
+    height: 32px;
+    padding: 9px;
+  }
+  .tit {
+      padding-top: 120px;
+      font-size: 32px;
+      line-height: 48px;
+      margin-bottom: 50px;
+      text-align: center;
+  }
+  .sub-tit {
+      font-size: 16px;
+      line-height: 30px;
+      text-align: center;
+  }
+  .img-sleeping {
+      width: 250px;
+      margin: 35px auto 0;
+  }
+  main {
+      position: relative;
+  }
+  .sec-liedown {
+    display: block;
+  }
+  .img-liedown {
+      margin: 0 auto;
+      width: 250px;
+      transform: rotate(90deg);
+  }
+  .liedowntxt-wrap {
+      margin-top: 10px;
+  }
+  .liedown-tit {
+    text-align: center;
+      font-size: 28px;
+  }
+  .liedown-subtxt {
+    text-align: center;
+      line-height: 25px;
+  }
+  .btn-up {
+      right: 10vw;
+      bottom: 70px;
+  }
+  .sec-jelly {
+      margin: 100px 0 350px;
+  }
+  .jelly-tit {
+      font-size: 28px;
+      line-height: 36px;
+  }
+  .jelly-subtxt {
+      font-size: 15px;
+      line-height: 24px;
+      margin-bottom: 50px;
+  }
+  .jellyimg-wrap {
+      gap: 15px;
+      height: 280px;
+      overflow-x: scroll;
+      
+  }
+  .jellyimg-wrap img {
+      width: 250px;
+      height: 250px;
+      border-radius: 40px;
+  }
+
+  
+  .sec-subscribe {
+      width: 326px;
+      height: 328px;
+      bottom: 545px;
+      display: block;
+      bottom: 300px;
+  }
+  
+  .subscribe-txtwrap {
+      margin: 40px 20px 20px 28px;
+  }
+  .subscribe-tit {
+      font-size: 28px;
+  }
+  .subscribe-subtxt {
+      font-weight: 200;
+  }
+  .inpwrap-subscribe {
+    text-align: center;
+  }
+  .inp-subscribe {
+      width: 280px;
+      height: 45px;
+      margin: 0 auto;
+  }
+  .btn-subscribe {
+      top: 240px;
+      transform: translateX(-50%);
+  }
+  .btn-subscribe:hover {
+      background-color: white;
+      color: #D97652;
+      border: 4px solid #D97652;
+      transition: .2s;
+  }
+  
+  main::after {
+      display: block;
+      content: "";
+      width: 100vW;
+      height: 345px;
+      background-repeat: no-repeat;
+      background-size: 300%;
+      background-image: url(./images/eyes.png);
+      background-position: 0 35%;
+      opacity: 0.6;
+      z-index: -10;
+  }
+  .footer {
+      height: 120px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .foot-logo {
+      width: 100px;
+      height: 32px;
+  }
+  .instagram {
+      width: 20px;
+      height: 20px;
+  }
+  
+  .subscribe-modal {
+      width: 300px;
+      height: 300px;
+      background-color: #F2E9D8;
+      padding-top: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+  }
+  .modal-img {
+      width: 150px;
+      top: 20px;
+  }
+  .modal-txt {
+    margin-top: 136px;
+      font-size: 24px;
+  }
+  .modal-subtxt {
+    margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 18px;
     }
-    .logo {
-        width: 100px;
-        height: 30px;
-    }
-    .menu {
-        display: none;
-    }
+  .modal-btn {
+      width: 180px;
+      height: 45px;
+      font-size: 15px;
+  }
+  
 }
