@@ -360,7 +360,7 @@ main::after {
 
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
 
   .header {
     height: 802px;
@@ -369,8 +369,9 @@ main::after {
     padding: 0 30px;
 }
   .logo {
-      width: 80px;
-      height: 25px;
+      width: 89px;
+      height: 27px;
+      margin-top: 18px;
   }
   .spansmall {
     display: block;
